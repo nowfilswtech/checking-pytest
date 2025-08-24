@@ -1,6 +1,4 @@
 Live logs will appear here...        
-
-
 [INFO] Starting process...
 [INFO] Process completed successfully
 
