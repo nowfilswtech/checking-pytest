@@ -1,20 +1,19 @@
-Live logs will appear here...
+Library    SeleniumLibrary
 
-[INFO] Starting process...
-[INFO] Process completed successfully
+*** Variables ***
+${URL}    https://example.com
 
-data:Cloning into 'Cpp'...
-data:
+*** Test Cases ***
+Open Browser to Example
+    Open Browser    ${URL}    chrome
+    Title Should Be    Example Domain
+    [Teardown]    Close Browser
 
-data:[ ERROR ] Suite '2025-06-24T11-35-17' contains no tests or tasks.
-data:
+Verify Example Content
+    [Setup]    Open Browser to Example
+    Element Should Be Visible    xpath://h1[contains(text(), 'Example Domain')]
+    [Teardown]    Close Browser
 
-data:
-data:
-
-data:Try --help for usage information.
-data:
-
-data:Report file not found.
-hghg
+Verify Example Content1    
+    Log To Console    Example Domain
 
