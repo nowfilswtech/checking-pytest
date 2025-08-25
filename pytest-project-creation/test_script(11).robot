@@ -1,1 +1,1 @@
-nm
+print("test_script(11).robot file......");
